@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO: Update these for each recipe
+       ============================================================ -->
+  <title>Low Histamine Filet Mignon with Sweet Potato | Low Histamine Living</title>
+  <meta name="description" content="A simple, elegant low-histamine filet mignon with sweet potato — pan-seared and finished in the oven for a perfect, juicy steak every time." />
+  <meta name="keywords" content="low histamine recipe, filet mignon, sweet potato, histamine intolerance, mast cell diet, steak recipe" />
+  <link rel="canonical" href="https://lowhistamineliving.com/filet-mignon-sweet-potato" />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Low Histamine Filet Mignon with Sweet Potato" />
+  <meta property="og:description" content="A simple, elegant low-histamine steak dinner — pan-seared and oven-finished to perfection." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://lowhistamineliving.com/filet-mignon-sweet-potato" />
+  <!-- <meta property="og:image" content="https://yourdomain.com/images/tenderloin.jpg" /> -->
+
+  <!-- ============================================================
+       GOOGLE ADSENSE: Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID
+       Uncomment this block when you're ready to run ads
+       ============================================================ -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+       crossorigin="anonymous"></script>
+  -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       CSS VARIABLES — edit these to retheme the whole site
+       ============================================================ */
+    :root {
+      --cream:       #faf7f2;
+      --warm-white:  #fff9f2;
+      --parchment:   #f0e9dc;
+      --sage:        #7a8c6e;
+      --sage-dark:   #556349;
+      --rust:        #b85c38;
+      --rust-light:  #d4784f;
+      --charcoal:    #2c2c2a;
+      --mid-gray:    #6b6b68;
+      --light-gray:  #c8c4bc;
+      --border:      #e2dbd0;
+      --font-serif:  'Cormorant Garamond', Georgia, serif;
+      --font-sans:   'Jost', sans-serif;
+      --max-width:   860px;
+      --ad-bg:       #f5f0e8;
+    }
+
+    /* ============================================================
+       RESET & BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--sage-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ============================================================
+       SITE HEADER / NAV
+       ============================================================ */
+    .site-header {
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .site-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--charcoal);
+    }
+
+    .site-logo span { color: var(--sage-dark); }
+
+    .site-nav {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .site-nav a { color: var(--mid-gray); transition: color 0.2s; }
+    .site-nav a:hover { color: var(--sage-dark); text-decoration: none; }
+
+    /* ============================================================
+       AD SLOT — LEADERBOARD (top, below nav)
+       ============================================================ */
+    .ad-leaderboard {
+      background: var(--ad-bg);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90px;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    /* Placeholder visible before ads are enabled */
+    .ad-placeholder {
+      color: var(--light-gray);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 1px dashed var(--light-gray);
+      padding: 1.2rem 2rem;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 728px;
+    }
+
+    /* ============================================================
+       LAYOUT WRAPPER
+       ============================================================ */
+    .layout {
+      max-width: calc(var(--max-width) + 320px + 3rem);
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      display: grid;
+      grid-template-columns: var(--max-width) 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ============================================================
+       MAIN ARTICLE
+       ============================================================ */
+    .recipe-article {}
+
+    /* Hero / Title area */
+    .recipe-hero {
+      margin-bottom: 2.5rem;
+    }
+
+    .recipe-category {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+      border: 1px solid var(--sage);
+      padding: 0.25rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.2rem;
+    }
+
+    .recipe-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+
+    .recipe-subtitle {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--mid-gray);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Recipe meta badges */
+    .recipe-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-badge {
+      background: var(--parchment);
+      border-radius: 4px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.82rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .meta-badge .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+    }
+
+    .meta-badge .value {
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    /* Hero image placeholder / actual image */
+    .recipe-image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      background: var(--parchment);
+    }
+
+    .recipe-image-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--parchment) 0%, #e8e0d0 100%);
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light-gray);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Histamine-safe badge */
+    .histamine-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #eaf2e8;
+      color: var(--sage-dark);
+      border: 1px solid #c4d9be;
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.5rem;
+    }
+
+    .histamine-badge::before {
+      content: '✓';
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    /* ============================================================
+       INTRO TEXT
+       ============================================================ */
+    .recipe-intro {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 2rem;
+    }
+
+    /* ============================================================
+       MID-CONTENT AD SLOT
+       ============================================================ */
+    .ad-inline {
+      margin: 2rem 0;
+      background: var(--ad-bg);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      border: 1px solid var(--border);
+    }
+
+    /* ============================================================
+       INGREDIENTS & INSTRUCTIONS
+       ============================================================ */
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--rust);
+      display: inline-block;
+    }
+
+    .ingredients-section,
+    .instructions-section,
+    .tips-section {
+      margin-bottom: 2.5rem;
+    }
+
+    /* Ingredients */
+    .ingredients-group + .ingredients-group {
+      margin-top: 1.2rem;
+    }
+
+    .ingredients-group-title {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ingredients-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .ingredients-list li:last-child { border-bottom: none; }
+
+    .ing-amount {
+      font-weight: 500;
+      min-width: 90px;
+      color: var(--rust);
+    }
+
+    /* Instructions */
+    .steps-list {
+      list-style: none;
+      counter-reset: steps;
+      padding: 0;
+    }
+
+    .steps-list li {
+      counter-increment: steps;
+      padding: 1.1rem 0 1.1rem 3.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      position: relative;
+    }
+
+    .steps-list li:last-child { border-bottom: none; }
+
+    .steps-list li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      width: 2rem;
+      height: 2rem;
+      background: var(--rust);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-family: var(--font-sans);
+    }
+
+    /* Tips */
+    .tips-list {
+      padding: 0;
+      list-style: none;
+    }
+
+    .tips-list li {
+      padding: 0.6rem 0 0.6rem 1.5rem;
+      position: relative;
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tips-list li:last-child { border-bottom: none; }
+
+    .tips-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--sage-dark);
+    }
+
+    /* Histamine notes box */
+    .histamine-notes {
+      background: #f3f8f1;
+      border-left: 3px solid var(--sage);
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 2rem 0;
+    }
+
+    .histamine-notes h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--sage-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .histamine-notes p {
+      font-size: 0.88rem;
+      color: var(--mid-gray);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       SIDEBAR
+       ============================================================ */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+    }
+
+    .sidebar-widget {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar-widget h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-recipe-link {
+      display: flex;
+      flex-direction: column;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+      color: var(--charcoal);
+      transition: color 0.2s;
+    }
+
+    .sidebar-recipe-link:last-child { border-bottom: none; }
+    .sidebar-recipe-link:hover { color: var(--rust); text-decoration: none; }
+
+    .sidebar-recipe-link .tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+    }
+
+    /* Sidebar ad slot */
+    .ad-sidebar {
+      background: var(--ad-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 250px;
+      text-align: center;
+    }
+
+    /* ============================================================
+       FOOTER AD + SITE FOOTER
+       ============================================================ */
+    .ad-footer {
+      background: var(--ad-bg);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100px;
+      padding: 1rem;
+    }
+
+    .site-footer {
+      background: var(--charcoal);
+      color: var(--light-gray);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      line-height: 1.9;
+    }
+
+    .site-footer a { color: var(--sage); }
+
+    /* ============================================================
+       PRINT-FRIENDLY BUTTON
+       ============================================================ */
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--sage-dark);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.3rem;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+      transition: background 0.2s;
+    }
+
+    .print-btn:hover { background: var(--sage); }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 1100px) {
+      .layout {
+        grid-template-columns: 1fr;
+        max-width: var(--max-width);
+      }
+      .sidebar { position: static; }
+    }
+
+    @media (max-width: 600px) {
+      .site-nav { display: none; }
+      .recipe-meta { gap: 0.5rem; }
+    }
+
+    /* ============================================================
+       PRINT STYLES
+       ============================================================ */
+    @media print {
+      .site-header, .ad-leaderboard, .ad-inline, .sidebar,
+      .ad-sidebar, .ad-footer, .site-footer, .print-btn { display: none !important; }
+      .layout { grid-template-columns: 1fr; }
+      body { font-size: 12pt; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       SITE HEADER — update site name if desired
+       ============================================================ -->
+  <header class="site-header">
+    <div class="site-logo">Low Histamine <span>Living</span></div>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/recipes">All Recipes</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       AD SLOT 1 — Leaderboard (728×90 or responsive)
+       To activate: uncomment AdSense snippet below and remove placeholder
+       ============================================================ -->
+  <div class="ad-leaderboard">
+    <!-- UNCOMMENT when AdSense is ready:
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+
+  <!-- ============================================================
+       MAIN LAYOUT (article + sidebar)
+       ============================================================ -->
+  <div class="layout">
+
+    <!-- ========== RECIPE ARTICLE ========== -->
+    <article class="recipe-article">
+
+      <div class="recipe-hero">
+
+        <span class="recipe-category">Dinner · Beef</span>
+
+        <!-- ======================================================
+             RECIPE TITLE — update per recipe
+             ====================================================== -->
+        <h1 class="recipe-title">Filet Mignon<br>with Sweet Potato</h1>
+        <p class="recipe-subtitle">Pan-seared, oven-finished, and ready in under 40 minutes</p>
+
+        <!-- ======================================================
+             RECIPE META — update per recipe
+             ====================================================== -->
+        <div class="recipe-meta">
+          <div class="meta-badge">
+            <span class="label">Prep</span>
+            <span class="value">20 min</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Cook</span>
+            <span class="value">15 min</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Total</span>
+            <span class="value">~35 min</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Serves</span>
+            <span class="value">1</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Difficulty</span>
+            <span class="value">Easy</span>
+          </div>
+        </div>
+
+        <img src="filet-mignon-sweet-potato.jpg" alt="Filet mignon with sweet potato and herb butter on a plate" class="recipe-image" />
+
+        <div class="histamine-badge">Low-Histamine Verified</div>
+
+      </div><!-- /recipe-hero -->
+
+      <!-- Print button -->
+      <button class="print-btn" onclick="window.print()">🖨 Print Recipe</button>
+
+      <!-- ======================================================
+           INTRO — update per recipe
+           ====================================================== -->
+      <div class="recipe-intro">
+        <p>Filet mignon is one of the very best choices for a low-histamine diet — it's a lean, mild cut that cooks quickly and pairs beautifully with a simple sweet potato. This recipe uses the classic steakhouse method: salt the steak early, sear it hot, then finish in the oven. The result is a deeply golden crust with a juicy, tender center.</p>
+        <p style="margin-top:0.8rem;">The key is using <strong>freshly purchased meat</strong> and cooking it the same day. Histamine increases as meat ages, so fresh is everything. Coconut aminos make a wonderful low-histamine finishing sauce — mild, slightly savory, and a perfect complement to the steak.</p>
+      </div>
+
+      <!-- ======================================================
+           AD SLOT 2 — In-content rectangle (300×250 or responsive)
+           ====================================================== -->
+      <div class="ad-inline">
+        <!-- UNCOMMENT when AdSense is ready:
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="0987654321"
+             data-ad-format="rectangle"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- ======================================================
+           INGREDIENTS — update per recipe
+           ====================================================== -->
+      <section class="ingredients-section">
+        <h2 class="section-heading">Ingredients</h2>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">The Steak</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">5–8 oz</span>filet mignon, fresh (purchased same day)</li>
+            <li><span class="ing-amount">To taste</span>sea salt</li>
+            <li><span class="ing-amount">Drizzle</span>olive oil</li>
+          </ul>
+        </div>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">The Sweet Potato</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">4–6 oz</span>sweet potato (1 medium)</li>
+          </ul>
+        </div>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">To Serve (optional)</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">1 tsp</span>unsalted butter (for steak or potato)</li>
+            <li><span class="ing-amount">1–2 tsp</span>low-sodium coconut aminos (as a steak sauce)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Histamine-safety callout -->
+      <div class="histamine-notes">
+        <h3>🌿 Histamine-Safety Notes</h3>
+        <p>Buy your filet mignon fresh the <em>same day</em> you plan to cook it — histamine builds as meat ages. Cook and eat immediately. Coconut aminos are a great low-histamine alternative to soy sauce or Worcestershire. If you have leftovers, freeze them right away rather than refrigerating overnight.</p>
+      </div>
+
+      <!-- ======================================================
+           INSTRUCTIONS — update per recipe
+           ====================================================== -->
+      <section class="instructions-section">
+        <h2 class="section-heading">Instructions</h2>
+        <ol class="steps-list">
+          <li><strong>Salt the steak early.</strong> Place your filet mignon on a plate on the counter, season both sides with salt, and set a timer for 20 minutes. This draws out a little moisture, then reabsorbs it for a more flavorful, evenly seasoned steak.</li>
+          <li><strong>Preheat the oven</strong> to 375°F while the steak rests.</li>
+          <li><strong>Heat the pan.</strong> When the timer goes off, add a drizzle of olive oil to a stainless steel or cast iron skillet and heat over medium heat for 3–5 minutes, until the oil just begins to smoke.</li>
+          <li><strong>Sear the steak.</strong> Place the filet in the pan and cook for 2½–3 minutes per side without moving it, until a deep golden crust forms.</li>
+          <li><strong>Finish in the oven.</strong> Transfer the skillet to the oven and cook for 6 minutes for a 1-inch thick steak. If your steak is thicker, add 2–4 more minutes. (Use a meat thermometer if you have one: 130°F = medium-rare, 140°F = medium.)</li>
+          <li><strong>Microwave the sweet potato.</strong> While the steak is in the oven, pierce the sweet potato a few times with a fork and microwave for 3 minutes. Flip it over and microwave for another 3 minutes. Remove and cover loosely with foil to keep warm.</li>
+          <li><strong>Rest the steak.</strong> When the steak comes out of the oven, transfer it to a clean plate and tent loosely with foil. Let it rest for 5 minutes — this keeps all the juices inside.</li>
+          <li><strong>Serve immediately.</strong> Plate the steak alongside the sweet potato. Add a little butter to each if you like, or drizzle the steak with coconut aminos as a finishing sauce.</li>
+        </ol>
+      </section>
+
+      <!-- ======================================================
+           TIPS — update per recipe
+           ====================================================== -->
+      <section class="tips-section">
+        <h2 class="section-heading">Tips &amp; Variations</h2>
+        <ul class="tips-list">
+          <li>The 20-minute salting step makes a real difference — don't skip it. It seasons the steak all the way through, not just the surface.</li>
+          <li>Your pan must be truly hot before the steak goes in. If the oil isn't just smoking, wait a little longer — a proper sear is what creates that crust.</li>
+          <li>Coconut aminos can be found at most grocery stores or online. Low Sodium Coconut Aminos by Coconut Secret is a widely available brand.</li>
+          <li>Freeze any leftover steak immediately — don't leave it in the fridge overnight, as histamine builds quickly in cooked meat.</li>
+        </ul>
+      </section>
+
+    </article><!-- /recipe-article -->
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+
+      <!-- AD SLOT 3 — Sidebar (300×250) -->
+      <div class="ad-sidebar">
+        <!-- UNCOMMENT when AdSense is ready:
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1122334455"
+             data-ad-format="rectangle"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- More Recipes widget — add links as you publish -->
+      <div class="sidebar-widget">
+        <h3>More Recipes</h3>
+        <p style="font-size:0.88rem;color:var(--mid-gray);font-style:italic;">More recipes coming soon.</p>
+        <!-- Add more links here as you publish more recipes -->
+      </div>
+
+      <!-- About widget -->
+      <div class="sidebar-widget">
+        <h3>About This Site</h3>
+        <p style="font-size:0.85rem;line-height:1.7;color:var(--mid-gray);">All recipes on Low Histamine Living are crafted for people managing histamine intolerance, mast cell disorders, and AI diseases — using fresh, low-histamine ingredients and safe cooking methods.</p>
+      </div>
+
+    </aside>
+
+  </div><!-- /layout -->
+
+  <!-- ============================================================
+       AD SLOT 4 — Footer banner
+       ============================================================ -->
+  <div class="ad-footer">
+    <!-- UNCOMMENT when AdSense is ready:
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="6677889900"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+
+  <!-- ============================================================
+       SITE FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <p>© 2026 Low Histamine Living · All recipes are for informational purposes only.<br>
+    Always consult your healthcare provider regarding dietary changes for medical conditions.
+    </p>
+  </footer>
+
+</body>
+</html>
