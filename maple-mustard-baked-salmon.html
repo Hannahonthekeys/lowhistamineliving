@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO: Update these for each recipe
+       ============================================================ -->
+  <title>Maple Mustard Baked Salmon with Vegetables & Rice | Low Histamine Living</title>
+  <meta name="description" content="A wholesome low-histamine baked salmon dinner with pan-seared vegetables and rice — finished with a simple maple mustard coconut aminos glaze." />
+  <meta name="keywords" content="low histamine recipe, baked salmon, maple mustard salmon, pan seared vegetables, histamine intolerance, mast cell diet, salmon recipe, rice" />
+  <link rel="canonical" href="https://lowhistamineliving.com/maple-mustard-baked-salmon" />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Maple Mustard Baked Salmon with Vegetables & Rice" />
+  <meta property="og:description" content="A wholesome low-histamine baked salmon with pan-seared vegetables and rice, finished with a simple maple mustard glaze." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://lowhistamineliving.com/maple-mustard-baked-salmon" />
+  <!-- <meta property="og:image" content="https://yourdomain.com/images/maple-mustard-salmon.jpg" /> -->
+
+  <!-- ============================================================
+       GOOGLE ADSENSE: Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID
+       Uncomment this block when you're ready to run ads
+       ============================================================ -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+       crossorigin="anonymous"></script>
+  -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       CSS VARIABLES — edit these to retheme the whole site
+       ============================================================ */
+    :root {
+      --cream:       #faf7f2;
+      --warm-white:  #fff9f2;
+      --parchment:   #f0e9dc;
+      --sage:        #7a8c6e;
+      --sage-dark:   #556349;
+      --rust:        #b85c38;
+      --rust-light:  #d4784f;
+      --charcoal:    #2c2c2a;
+      --mid-gray:    #6b6b68;
+      --light-gray:  #c8c4bc;
+      --border:      #e2dbd0;
+      --font-serif:  'Cormorant Garamond', Georgia, serif;
+      --font-sans:   'Jost', sans-serif;
+      --max-width:   860px;
+      --ad-bg:       #f5f0e8;
+    }
+
+    /* ============================================================
+       RESET & BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--sage-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ============================================================
+       SITE HEADER / NAV
+       ============================================================ */
+    .site-header {
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .site-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--charcoal);
+    }
+
+    .site-logo span { color: var(--sage-dark); }
+
+    .site-nav {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .site-nav a { color: var(--mid-gray); transition: color 0.2s; }
+    .site-nav a:hover { color: var(--sage-dark); text-decoration: none; }
+
+    /* ============================================================
+       AD SLOT — LEADERBOARD (top, below nav)
+       ============================================================ */
+    .ad-leaderboard {
+      background: var(--ad-bg);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90px;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    /* Placeholder visible before ads are enabled */
+    .ad-placeholder {
+      color: var(--light-gray);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 1px dashed var(--light-gray);
+      padding: 1.2rem 2rem;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 728px;
+    }
+
+    /* ============================================================
+       LAYOUT WRAPPER
+       ============================================================ */
+    .layout {
+      max-width: calc(var(--max-width) + 320px + 3rem);
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      display: grid;
+      grid-template-columns: var(--max-width) 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ============================================================
+       MAIN ARTICLE
+       ============================================================ */
+    .recipe-article {}
+
+    /* Hero / Title area */
+    .recipe-hero {
+      margin-bottom: 2.5rem;
+    }
+
+    .recipe-category {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+      border: 1px solid var(--sage);
+      padding: 0.25rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.2rem;
+    }
+
+    .recipe-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+
+    .recipe-subtitle {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--mid-gray);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Recipe meta badges */
+    .recipe-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-badge {
+      background: var(--parchment);
+      border-radius: 4px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.82rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .meta-badge .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+    }
+
+    .meta-badge .value {
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    /* Hero image placeholder / actual image */
+    .recipe-image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      background: var(--parchment);
+    }
+
+    .recipe-image-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--parchment) 0%, #e8e0d0 100%);
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light-gray);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Histamine-safe badge */
+    .histamine-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #eaf2e8;
+      color: var(--sage-dark);
+      border: 1px solid #c4d9be;
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.5rem;
+    }
+
+    .histamine-badge::before {
+      content: '✓';
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    /* ============================================================
+       INTRO TEXT
+       ============================================================ */
+    .recipe-intro {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 2rem;
+    }
+
+    /* ============================================================
+       MID-CONTENT AD SLOT
+       ============================================================ */
+    .ad-inline {
+      margin: 2rem 0;
+      background: var(--ad-bg);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      border: 1px solid var(--border);
+    }
+
+    /* ============================================================
+       INGREDIENTS & INSTRUCTIONS
+       ============================================================ */
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--rust);
+      display: inline-block;
+    }
+
+    .ingredients-section,
+    .instructions-section,
+    .tips-section {
+      margin-bottom: 2.5rem;
+    }
+
+    /* Ingredients */
+    .ingredients-group + .ingredients-group {
+      margin-top: 1.2rem;
+    }
+
+    .ingredients-group-title {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ingredients-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .ingredients-list li:last-child { border-bottom: none; }
+
+    .ing-amount {
+      font-weight: 500;
+      min-width: 90px;
+      color: var(--rust);
+    }
+
+    /* Instructions */
+    .steps-list {
+      list-style: none;
+      counter-reset: steps;
+      padding: 0;
+    }
+
+    .steps-list li {
+      counter-increment: steps;
+      padding: 1.1rem 0 1.1rem 3.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      position: relative;
+    }
+
+    .steps-list li:last-child { border-bottom: none; }
+
+    .steps-list li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      width: 2rem;
+      height: 2rem;
+      background: var(--rust);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-family: var(--font-sans);
+    }
+
+    /* Tips */
+    .tips-list {
+      padding: 0;
+      list-style: none;
+    }
+
+    .tips-list li {
+      padding: 0.6rem 0 0.6rem 1.5rem;
+      position: relative;
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tips-list li:last-child { border-bottom: none; }
+
+    .tips-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--sage-dark);
+    }
+
+    /* Histamine notes box */
+    .histamine-notes {
+      background: #f3f8f1;
+      border-left: 3px solid var(--sage);
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 2rem 0;
+    }
+
+    .histamine-notes h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--sage-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .histamine-notes p {
+      font-size: 0.88rem;
+      color: var(--mid-gray);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       SIDEBAR
+       ============================================================ */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+    }
+
+    .sidebar-widget {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar-widget h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-recipe-link {
+      display: flex;
+      flex-direction: column;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+      color: var(--charcoal);
+      transition: color 0.2s;
+    }
+
+    .sidebar-recipe-link:last-child { border-bottom: none; }
+    .sidebar-recipe-link:hover { color: var(--rust); text-decoration: none; }
+
+    .sidebar-recipe-link .tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+    }
+
+    /* Sidebar ad slot */
+    .ad-sidebar {
+      background: var(--ad-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 250px;
+      text-align: center;
+    }
+
+    /* ============================================================
+       FOOTER AD + SITE FOOTER
+       ============================================================ */
+    .ad-footer {
+      background: var(--ad-bg);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100px;
+      padding: 1rem;
+    }
+
+    .site-footer {
+      background: var(--charcoal);
+      color: var(--light-gray);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      line-height: 1.9;
+    }
+
+    .site-footer a { color: var(--sage); }
+
+    /* ============================================================
+       PRINT-FRIENDLY BUTTON
+       ============================================================ */
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--sage-dark);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.3rem;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+      transition: background 0.2s;
+    }
+
+    .print-btn:hover { background: var(--sage); }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 1100px) {
+      .layout {
+        grid-template-columns: 1fr;
+        max-width: var(--max-width);
+      }
+      .sidebar { position: static; }
+    }
+
+    @media (max-width: 600px) {
+      .site-nav { display: none; }
+      .recipe-meta { gap: 0.5rem; }
+    }
+
+    /* ============================================================
+       PRINT STYLES
+       ============================================================ */
+    @media print {
+      .site-header, .ad-leaderboard, .ad-inline, .sidebar,
+      .ad-sidebar, .ad-footer, .site-footer, .print-btn { display: none !important; }
+      .layout { grid-template-columns: 1fr; }
+      body { font-size: 12pt; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       SITE HEADER — update site name if desired
+       ============================================================ -->
+  <header class="site-header">
+    <div class="site-logo">Low Histamine <span>Living</span></div>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/recipes">All Recipes</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       AD SLOT 1 — Leaderboard (728×90 or responsive)
+       To activate: uncomment AdSense snippet below and remove placeholder
+       ============================================================ -->
+  <div class="ad-leaderboard">
+    <!-- UNCOMMENT when AdSense is ready:
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+
+  <!-- ============================================================
+       MAIN LAYOUT (article + sidebar)
+       ============================================================ -->
+  <div class="layout">
+
+    <!-- ========== RECIPE ARTICLE ========== -->
+    <article class="recipe-article">
+
+      <div class="recipe-hero">
+
+        <span class="recipe-category">Dinner · Fish</span>
+
+        <!-- ======================================================
+             RECIPE TITLE — update per recipe
+             ====================================================== -->
+        <h1 class="recipe-title">Maple Mustard<br>Baked Salmon</h1>
+        <p class="recipe-subtitle">With pan-seared vegetables and rice — serves 2 with leftovers</p>
+
+        <!-- ======================================================
+             RECIPE META — update per recipe
+             ====================================================== -->
+        <div class="recipe-meta">
+          <div class="meta-badge">
+            <span class="label">Prep</span>
+            <span class="value">15 min</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Cook</span>
+            <span class="value">45 min</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Total</span>
+            <span class="value">~1 hr</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Serves</span>
+            <span class="value">2 + leftovers</span>
+          </div>
+          <div class="meta-badge">
+            <span class="label">Difficulty</span>
+            <span class="value">Easy</span>
+          </div>
+        </div>
+
+        <img src="maple_mustard_baked_salmon_.jpg" alt="Maple mustard baked salmon with pan-seared vegetables and rice on a plate, watercolor illustration" class="recipe-image" />
+
+        <div class="histamine-badge">Low-Histamine Verified</div>
+
+      </div><!-- /recipe-hero -->
+
+      <!-- Print button -->
+      <button class="print-btn" onclick="window.print()">🖨 Print Recipe</button>
+
+      <!-- ======================================================
+           INTRO — update per recipe
+           ====================================================== -->
+      <div class="recipe-intro">
+        <p>This is a complete, nourishing meal built around salmon — one of the best low-histamine proteins you can cook. Alaska wild caught salmon is an excellent choice, and frozen works beautifully here. The oven does most of the work, giving you time to get the rice and vegetables going on the stovetop. Everything comes together at once, and the maple mustard glaze ties it all into something that genuinely feels like a restaurant plate.</p>
+        <p style="margin-top:0.8rem;">The sauce is three ingredients: maple syrup, Dijon mustard, and coconut aminos. Mixed together cold and drizzled over at the end, it keeps things bright and fresh. If using fresh salmon, cook it the same day you buy it. If using frozen, it goes straight from the freezer into the oven — no thawing needed. Either way, freeze any leftovers right away to keep histamine levels low.</p>
+      </div>
+
+      <!-- ======================================================
+           AD SLOT 2 — In-content rectangle (300×250 or responsive)
+           ====================================================== -->
+      <div class="ad-inline">
+        <!-- UNCOMMENT when AdSense is ready:
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="0987654321"
+             data-ad-format="rectangle"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- ======================================================
+           INGREDIENTS — update per recipe
+           ====================================================== -->
+      <section class="ingredients-section">
+        <h2 class="section-heading">Ingredients</h2>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">The Salmon</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">32 oz</span>salmon filet, fresh or frozen (Alaska wild caught recommended)</li>
+          </ul>
+        </div>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">The Rice</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">1 cup</span>brown rice</li>
+            <li><span class="ing-amount">2 cups</span>water</li>
+          </ul>
+        </div>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">The Vegetables</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">1 cup</span>green beans, prepped</li>
+            <li><span class="ing-amount">1 cup</span>peas</li>
+            <li><span class="ing-amount">1 cup</span>red bell pepper, chopped</li>
+            <li><span class="ing-amount">1 cup</span>bok choy, chopped</li>
+            <li><span class="ing-amount">Drizzle</span>olive oil</li>
+          </ul>
+        </div>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">The Maple Mustard Sauce</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">1 tbsp</span>pure maple syrup</li>
+            <li><span class="ing-amount">2 tbsp</span>Dijon mustard</li>
+            <li><span class="ing-amount">3 tbsp</span>coconut aminos</li>
+          </ul>
+        </div>
+
+        <div class="ingredients-group">
+          <p class="ingredients-group-title">For the Pan</p>
+          <ul class="ingredients-list">
+            <li><span class="ing-amount">Drizzle</span>olive oil (for the baking pan)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Histamine-safety callout -->
+      <div class="histamine-notes">
+        <h3>🌿 Histamine-Safety Notes</h3>
+        <p>Frozen salmon — especially Alaska wild caught — is an excellent low-histamine choice, since it's flash-frozen at sea before histamine has a chance to build. If using fresh salmon, buy it the <em>same day</em> you plan to cook it. Either way, cook and serve immediately. Coconut aminos are a great low-histamine alternative to soy sauce. Leftovers should be frozen right away; refrigerating fish overnight can raise histamine levels, though some people tolerate next-day fridge storage. Know your own threshold.</p>
+      </div>
+
+      <!-- ======================================================
+           INSTRUCTIONS — update per recipe
+           ====================================================== -->
+      <section class="instructions-section">
+        <h2 class="section-heading">Instructions</h2>
+        <ol class="steps-list">
+          <li><strong>Preheat the oven</strong> to 425°F.</li>
+          <li><strong>Start the rice.</strong> Place 2 cups of water in a pot and bring to a boil over high heat. Rinse 1 cup of rice well under cold water. Once the water is boiling, add the rice, reduce heat to low, cover, and set a timer for 45 minutes.</li>
+          <li><strong>Prepare the baking pan.</strong> Line a glass Pyrex pan (or similar oven-safe dish) with aluminum foil for easy cleanup — or skip the foil if you prefer. Drizzle a little olive oil over the foil or the bottom of the pan.</li>
+          <li><strong>Add the salmon.</strong> Place the salmon filet in the prepared pan and set aside until the oven is fully preheated.</li>
+          <li><strong>Prep your vegetables</strong> while the oven heats up.</li>
+          <li><strong>Bake the salmon.</strong> Once the oven is preheated, place the salmon inside. If thawed, bake for 25–30 minutes and begin checking with a meat thermometer at the 20-minute mark. If cooking from frozen, bake for 35–40 minutes and begin checking at the 30-minute mark. Salmon is done when it reaches 145°F internally.</li>
+          <li><strong>Cook the vegetables.</strong> While the salmon and rice are going, heat a skillet over medium heat for 3 minutes. Drizzle in a little olive oil, then add all the prepped vegetables. Cook for 5–10 minutes depending on your preferred texture — shorter cooking time keeps them with a little firmness, longer makes them softer. Set aside with the lid slightly ajar to release steam while staying warm.</li>
+          <li><strong>Make the sauce.</strong> Stir together the maple syrup, Dijon mustard, and coconut aminos in a small bowl until combined. Set aside.</li>
+          <li><strong>Finish the rice.</strong> After 45 minutes, the rice is done. Keep the lid on to hold the heat.</li>
+          <li><strong>Serve immediately.</strong> When the salmon is finished, serve right away. Dish up ½ cup rice, 1 cup vegetables, and 8 oz of salmon per plate. Drizzle generously with the maple mustard sauce and serve right away.</li>
+        </ol>
+      </section>
+
+      <!-- ======================================================
+           TIPS — update per recipe
+           ====================================================== -->
+      <section class="tips-section">
+        <h2 class="section-heading">Tips &amp; Variations</h2>
+        <ul class="tips-list">
+          <li>If cooking from frozen, plan for 35–40 minutes total and start checking the internal temperature at the 30-minute mark. Thawed salmon typically takes 25–30 minutes with a first check at 20 minutes.</li>
+          <li>The sauce is mixed cold and added at the end — this keeps the maple flavor bright and prevents it from caramelizing in the oven.</li>
+          <li>Coconut aminos can be found at most grocery stores or online. Low Sodium Coconut Aminos by Coconut Secret is a widely available brand.</li>
+          <li>You can swap in any low-histamine vegetables you have on hand — zucchini, asparagus, and broccoli all work well here.</li>
+          <li>Freeze leftovers immediately in individual portions so they're easy to thaw for future meals. If you do refrigerate for next-day eating, make sure it's well-sealed and consume within 24 hours.</li>
+        </ul>
+      </section>
+
+    </article><!-- /recipe-article -->
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+
+      <!-- AD SLOT 3 — Sidebar (300×250) -->
+      <div class="ad-sidebar">
+        <!-- UNCOMMENT when AdSense is ready:
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1122334455"
+             data-ad-format="rectangle"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- More Recipes widget — add links as you publish -->
+      <div class="sidebar-widget">
+        <h3>More Recipes</h3>
+        <a href="/filet-mignon-sweet-potato" class="sidebar-recipe-link">
+          <span class="tag">Dinner · Beef</span>
+          Filet Mignon with Sweet Potato
+        </a>
+        <!-- Add more links here as you publish more recipes -->
+      </div>
+
+      <!-- About widget -->
+      <div class="sidebar-widget">
+        <h3>About This Site</h3>
+        <p style="font-size:0.85rem;line-height:1.7;color:var(--mid-gray);">All recipes on Low Histamine Living are crafted for people managing histamine intolerance, mast cell disorders, and AI diseases — using fresh, low-histamine ingredients and safe cooking methods.</p>
+      </div>
+
+    </aside>
+
+  </div><!-- /layout -->
+
+  <!-- ============================================================
+       AD SLOT 4 — Footer banner
+       ============================================================ -->
+  <div class="ad-footer">
+    <!-- UNCOMMENT when AdSense is ready:
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="6677889900"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+
+  <!-- ============================================================
+       SITE FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <p>© 2026 Low Histamine Living · All recipes are for informational purposes only.<br>
+    Always consult your healthcare provider regarding dietary changes for medical conditions.
+    </p>
+  </footer>
+
+</body>
+</html>
